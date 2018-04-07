@@ -3,11 +3,25 @@
 <head>
 	<title>Ćwiczenia 2</title>
 	<meta charset="utf-8">
+        
 </head>
 <body>
     <p>Paragraf pierwszy</p>
     <p>Paragraf drugi</p>
-    <p id="trzeci">Paragraf trzeci</p>
+    <p id="trzeci">Paragraf trzeci <span>Wewnątrz span</span></p>
     <p>Paragraf czwarty</p>
+    <script type="text/javascript">
+        var pars = document.getElementsByTagName("p");
+        console.log(pars);
+        pars[0].innerHTML = "Po zmianie";
+        pars[1].style = "color: red;";
+        pars[3].style = "border: solid 1px black;";
+        var trzeci = document.getElementById("trzeci");
+        //alert(trzeci.innerText);
+        var tekst = prompt("Podaj dowolną treść");
+        if(tekst.trim().length>0){
+            pars[pars.length-1].innerHTML = tekst;
+        }
+    </script>
 </body>
 </html>
