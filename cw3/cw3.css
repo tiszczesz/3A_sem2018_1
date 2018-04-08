@@ -1,0 +1,14 @@
+div#zaint{
+    margin-left: 20px;
+    width: 100px;
+    text-align: right;
+}
+
+#lewy{
+    width: 50%;
+    float: left;
+}
+#prawy{
+    width: 50%;
+    float: right;
+}

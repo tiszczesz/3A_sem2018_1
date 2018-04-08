@@ -3,13 +3,24 @@
 <head>
 	<title>Ćwiczenia 2</title>
 	<meta charset="utf-8">
-        
+        <style>
+            #dd>span{
+                color:green;
+            }
+        </style>
 </head>
 <body>
     <p>Paragraf pierwszy</p>
     <p>Paragraf drugi</p>
     <p id="trzeci">Paragraf trzeci <span>Wewnątrz span</span></p>
     <p>Paragraf czwarty</p>
+    <div id="dd">
+        <span>Span w głównym </span>
+        <p>Ciekawy tekst  <span>span w paragrafie</span></p>
+        <p>inny ciekawy tekst</p>
+         <span>span w głównym</span>
+        <p>jeszcze bardziej ciekawy <span>span w paragrafie</span> tekst</P>
+    </div>
     <script type="text/javascript">
         var pars = document.getElementsByTagName("p");
         console.log(pars);

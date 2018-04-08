@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Elementy interaktywne w html</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="cw3.css"/>
+    </head>
+    <body>
+        <h1>Elementy interaktywne w html</h1>
+        <h2 style="cursor:pointer;">Lista wyboru</h2>
+        <div>
+        <select id="wybor">
+            <option value="opcja1">Opcja nr 1</option>
+            <option value="opcja2">Opcja nr 2</option>
+            <option value="opcja3">Opcja nr 3</option>
+            <option value="opcja4">Opcja nr 4</option>
+        </select>
+            <span id="wybWynik"></span>
+        </div>
+        <div id="lewy">
+            <h2 >Lista checkbox</h2>
+            <div id="zaint">
+                Filmy: <input type="checkbox" value="filmy" checked=""/><br>
+                Teatr: <input type="checkbox" value="teatr"/><br>
+                Muzyka: <input type="checkbox" value="muzyka"/><br>
+                Sport: <input type="checkbox" value="sport"/><br>
+            </div>
+        </div>
+        <div id="prawy">
+            <h2>Wybór alternatywny</h2>
+            <div id="wybAlt">
+                <div style="text-decoration: underline;">Narodowość:</div>
+                <input type="radio" value="pol" name="narod"/> polska<br>
+                <input type="radio" value="ros" name="narod"/> rosyjska<br>
+                <input type="radio" value="niem" name="narod"/> niemiecka<br>
+                <input type="radio" value="inna" name="narod"/> inna<br>
+            </div>
+        </div>
+        <script type="text/javascript">
+            document.getElementById("wybor").onchange = zmianaSelect;
+            var h2 = document.getElementsByTagName("h2")[0];
+            h2.style.color = "black;";
+            h2.onclick = kolor;
+            zmianaSelect();            
+            function zmianaSelect(){
+                var wybrana = document.getElementById("wybor").value;
+                document.getElementById("wybWynik").innerHTML = wybrana;
+            }
+            function kolor(){
+                if(this.style.color == "black"){
+                    this.style.color = "blue";
+                }else{
+                    this.style.color = "black";
+                }
+            }
+        </script>
+    </body>
+</html>
