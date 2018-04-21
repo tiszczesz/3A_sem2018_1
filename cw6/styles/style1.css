@@ -1,0 +1,17 @@
+
+table{
+    border: dashed 1px green;
+    border-collapse: collapse;
+}
+td,th{
+    border: solid 1px blue;
+    padding: 10px;
+}
+th{
+    background-color: #12a3e5;
+    color: white;
+}
+tr:hover{
+    background-color: #12a3e5;
+    color: white;
+}
