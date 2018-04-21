@@ -2,11 +2,40 @@
 
 <html>
     <head>
-        <title>TODO supply a title</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ćwiczenie 4 Tablice w JS</title>
+        <meta charset="UTF-8">        
     </head>
     <body>
-        <div>TODO write content</div>
+        <h1>Ćwiczenie 4 Tablice w JS</h1>
+        <div id="wynik" style="border: dotted 1px green;"></div>
+        <script type="text/javascript">
+            /* var t1 = [34,78,"ala ma kota",true,'t',"ostatni"];
+            console.log(t1);
+            alert(t1[2]);
+            alert(t1.length);
+            alert(t1[t1.length-1]);
+            t1.push("nowy element");
+            console.log(t1);
+            t1[1]=178;
+            console.log(t1);*/
+            var dzielnik = parseInt(prompt("Podaj dzielnik"));
+            if(isNaN(dzielnik)){
+                document.write("Błędne dane");
+            }else{
+                var t2=[];
+                for(var i=0;i<10;i++){
+                    t2.push((i+1)*dzielnik);
+                }
+                document.getElementById("wynik").innerHTML = toSelect(t2);
+            }
+            function toSelect(t2){
+                var html = "<select>";
+                for(var i=0;i<t2.length;i++){
+                    html += "<option value='"+t2[i]+"'>"+t2[i]+"</option>";
+                }
+                html+="</select>"
+                return html;
+            }
+        </script>
     </body>
 </html>
