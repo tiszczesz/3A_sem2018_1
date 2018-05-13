@@ -7,10 +7,10 @@
         <link rel="stylesheet" href="cw11.css"/>
     </head>
     <body>
-        <h1>Dane presonalne</h1>
+        <h1>Dane personalne</h1>
         <form>
             <fieldset>
-                <legend>Dane osobowe</legend>
+                <legend>Dane słuchacza</legend>
                 <div class="line">
                     <label for="imie">Imię: </label>
                     <input type="text" id="imie"/>
@@ -36,14 +36,14 @@
                     </select>
                 </div>
                 <div class="line">
-                    <label >Płeć: </label>
+                    <label >Płeć: </label><br>
                     <input type="radio"  value="kobieta" 
                            name="plec" checked=""/> Kobieta <br>
                     <input type="radio"  value="mężczyzna" 
                            name="plec"/> Mężczyzna 
                 </div>
                 <div class="line">
-                    <label >Zainteresowania: </label>
+                    <label >Zainteresowania: </label><br>
                     <input type="checkbox"  value="film" 
                            name="zaint" /> Film <br>
                     <input type="checkbox"  value="teatr" 
@@ -55,10 +55,13 @@
                 </div>
                 <div class="line">
                     <label ></label>
-                    <input type="button"  value="Zatwierdź" id="zatwierdz"/>                          
+                    <input type="button"  value="Zatwierdź" id="zatwierdz" />                          
                 </div>
             </fieldset>
         </form>
+        <div id="wynik">
+            
+        </div>
         <script type="text/javascript" src="cw11.js"></script>
     </body>
 </html>
