@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Ćwiczenie 9</title>
+        <meta charset="UTF-8">    
+        <style>
+            table{border-collapse: collapse; margin: auto; 
+                  text-align: center;}
+            td,th{border: solid thin green; padding: 3px;}
+            th{background-color: #ff0033; color: white;}
+            td{color:#ff0033; }
+            tr:hover{background-color: #2312aa;color: white;cursor: pointer;}
+        </style>
+    </head>
+    <body>
+        <h1>Ćwiczenie 9</h1>
+        <input type="color" id="color"/> 
+        <input type="button" id="zmien" value="Zmień kolor"/>
+        <input type="range" min="0" max="255" value="0"/>
+        <input type="date" id="data"/> <input type="button" id="getDate" value="Pobierz datę"/>
+        <br>
+        
+        <input type="button" id="wykonaj" value="Wykonaj"/>
+        <div id="wynik"></div>
+        <div id="info"></div>
+        <script type="text/javascript" src="cw9.js"></script>
+    </body>
+</html>
