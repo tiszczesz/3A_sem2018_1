@@ -1,0 +1,38 @@
+div{margin: 0px;}
+html, body {
+    height:100%;
+}
+#baner{
+    height: 80px;
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    background-color: gray;
+    font-size: 3em;
+}
+#lewy{    
+    width: 20%;    
+}
+#srodkowy{    
+    width: 40%;   
+}
+#prawy{    
+    width: 40%;
+    
+    height: 100%;
+}
+#lewy,#prawy,#srodkowy{
+    float:left;
+
+}
+#stopka{
+    height: 20px;
+    
+    text-align: right;
+    position: fixed;
+    bottom: 0px;
+    clear: both;
+    background-color: #ffcc00;
+    width: 100%;
+    padding-right: 20px;
+}
