@@ -1,7 +1,7 @@
 div{margin: 0px;}
-html, body {
+/*html, body {
     height:100%;
-}
+}*/
 #baner{
     height: 80px;
     padding: 20px;
@@ -14,20 +14,19 @@ html, body {
     width: 20%;    
 }
 #srodkowy{    
-    width: 40%;   
+    width: 35%;   
 }
 #prawy{    
-    width: 40%;
+    width: 35%;
     
     height: 100%;
 }
 #lewy,#prawy,#srodkowy{
     float:left;
-
+    padding: 10px;
 }
 #stopka{
-    height: 20px;
-    
+    height: 20px;    
     text-align: right;
     position: fixed;
     bottom: 0px;
